@@ -79,9 +79,13 @@ Each robot should have a gaussian estimation map generated from the [GPMix](http
 For the multi-robot case, there is a node that convert all the GP maps into one occu[ancy map. You can use [this](http://wiki.ros.org/multirobot_map_merge) package.
 
 ## 4. Launch
-Run the CQLite package after installation on a robot and source bash and /devel/setuup.sh file:
-
-`` $ roslaunch seal seal_bookstore.launch ``
+Run the SEAL package after installation on a robot and source bash and /devel/setuup.sh file:
+```
+$ git clone https://github.com/herolab-uga/ROS-SEAL.git
+$ cd ~/catkin_explore/
+$ catkin_make``
+$ roslaunch seal seal_bookstore.launch
+```
 
 
 
