@@ -1,0 +1,17 @@
+<launch>
+<arg name="Geta" value="15.0"/>
+<arg name="namespace" value="tb3_"/>
+<arg name="set_base_frame" value="base_footprint"/>
+<arg name="set_odom_frame" value="odom"/>
+<arg name="set_map_frame" value="$map"/>
+<arg name="configuration_basename" value=base_name"/>
+<param name="namespace_init_count" value="0"/>
+
+
+  <node pkg="seal" type="seal_gp" name="seal_gp" output="screen">
+  <param name="eta" value="$(arg Geta)"/>
+  <param name="gp_topic" value="$(arg namespace)/gp"/>
+  </node>
+  
+    
+</launch>
