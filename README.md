@@ -4,6 +4,15 @@ It is a ROS package that implements a SEAL: Simultaneous exploration and localiz
   - Seal graph node.
   - Seal guassian process node.
   - Seal convex hull node.
+ 
+## Overview
+By creating map using gp, robots first perform relative position-weighted connectivity graphs using RSSI as local sensor data, expanding these graphs based on potential positions at a particular location, and then further optimizing to obtain relative position estimates for all connected robots, DGORL seeks to efficiently achieve high localization accuracy. Furthermore, robots also provide fused gaussian process map which then convert into global map. SEAL applied convex hull optimization for boundary detection and navigate robots to the unexplored boundries. An overview of the SEAL can be found in Figure below:
+
+![Overview](/images/seal_overview.png)
+## Architecture
+Overall functionality of SEAL with respect to single robot and information sharing can be seen in the architectre figure below:
+
+![Overview](/images/seal_architecture.png)
 
 ## Installation Requirements
 * C++ requirements.   
