@@ -152,7 +152,7 @@
 
 
     <!-- open rviz for visualization purpose -->
-    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find ros_multitb3)/rviz/multi_tb3_gmapping.rviz">
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find seal)/rviz/seal_mapping.rviz">
     </node>
 
 
