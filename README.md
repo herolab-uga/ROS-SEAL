@@ -1,18 +1,18 @@
 # SEAL
-It is a ROS package that implements a SEAL: Simultaneous exploration and localization for multi-robot systems. It uses gausian process model for environemnt scanning and occupancy girds as a map representation.The packgae has 3 different ROS nodes:
+It is a ROS package that implements a SEAL: Simultaneous exploration and localization for multi-robot systems. It uses Gaussian process model for environment scanning and occupancy girds as a map representation. This package has 3 different ROS nodes:
 
-  - Seal graph node.
-  - Seal guassian process node.
-  - Seal convex hull node.
+  - SEAL graph node.
+  - SEAL Gaussian process node.
+  - SEAL convex hull node.
  
 ## Overview
-By creating map using gp, robots first perform relative position-weighted connectivity graphs using RSSI as local sensor data, expanding these graphs based on potential positions at a particular location, and then further optimizing to obtain relative position estimates for all connected robots, DGORL seeks to efficiently achieve high localization accuracy. Furthermore, robots also provide fused gaussian process map which then convert into global map. SEAL applied convex hull optimization for boundary detection and navigate robots to the unexplored boundries. An overview of the SEAL can be found in Figure below:
+By creating map using gp, robots first perform relative position-weighted connectivity graphs using RSSI as local sensor data, expanding these graphs based on potential positions at a particular location, and then further optimizing to obtain relative position estimates for all connected robots, DGORL seeks to efficiently achieve high localization accuracy. Furthermore, robots also provide fused Gaussian process map which then convert into global map. SEAL applied convex hull optimization for boundary detection and navigate robots to the unexplored boundaries. An overview of the SEAL can be found in Figure below:
 
 ![Overview](/images/seal_overview.png)
 ## Architecture
-Overall functionality of SEAL with respect to single robot and information sharing can be seen in the architectre figure below:
+Overall functionality of SEAL with respect to single robot and information sharing can be seen in the architecture figure below:
 
-![Overview](/images/seal_architecture.png)
+![Overview](/images/seal_architecture_v2.png)
 
 ## Installation Requirements
 * C++ requirements.   
@@ -73,10 +73,10 @@ And topic names should be like: ```/tb3_0/odom```,  ```/tb3_0/gp```,  ```/tb3_0/
 
 
 ### 3.5. A Gaussian Process node
-Each robot should have a gaussian estimation map generated from the [GPMix](https://github.com/yangggzhang/Heterogeneous-Multi-Robot-Adaptive-Sampling.gitg) package.
+Each robot should have a Gaussian estimation map generated from the [GPMix](https://github.com/yangggzhang/Heterogeneous-Multi-Robot-Adaptive-Sampling.gitg) package.
 
 ### 3.6. A map Generator node
-For the multi-robot case, there is a node that convert all the GP maps into one occu[ancy map. You can use [this](http://wiki.ros.org/multirobot_map_merge) package.
+For the multi-robot case, there is a node that convert all the GP maps into one occupancy map. You can use [this](http://wiki.ros.org/multirobot_map_merge) package.
 
 ## 4. Launch
 Run the SEAL package after installation on a robot and source bash and /devel/setuup.sh file:
@@ -86,6 +86,26 @@ $ cd ~/catkin_explore/
 $ catkin_make``
 $ roslaunch seal seal_bookstore.launch
 ```
+
+
+## Core contributors
+
+* **Ehsan Latif** - PhD Candidate
+
+* **Dr. Ramviyas Parasuraman** - Lab Director
+
+
+## Heterogeneous Robotics (HeRoLab)
+
+**Heterogeneous Robotics Lab (HeRoLab), School of Computing, University of Georgia.** 
+
+For further information, contact Ehsan Latif ehsan.latif@uga.edu or Dr. Ramviyas Parasuraman ramviyas@uga.edu
+
+https://hero.uga.edu/
+
+<p align="center">
+<img src="http://hero.uga.edu/wp-content/uploads/2021/04/herolab_newlogo_whitebg.png" width="300">
+</p>
 
 
 
