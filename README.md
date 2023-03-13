@@ -73,7 +73,7 @@ And topic names should be like: ```/tb3_0/odom```,  ```/tb3_0/gp```,  ```/tb3_0/
 
 
 ### 3.5. A Gaussian Process node
-Each robot should have a Gaussian estimation map generated from the [GPMix](https://github.com/yangggzhang/Heterogeneous-Multi-Robot-Adaptive-Sampling.gitg) package.
+Each robot should have a Gaussian estimation map generated from the [GPMix](https://github.com/yangggzhang/Heterogeneous-Multi-Robot-Adaptive-Sampling.git) package.
 
 ### 3.6. A map Generator node
 For the multi-robot case, there is a node that convert all the GP maps into one occupancy map. You can use [this](http://wiki.ros.org/multirobot_map_merge) package.
