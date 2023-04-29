@@ -205,7 +205,7 @@ def tb3_2_odom_callback(msg):
 
 if __name__ == '__main__':
     try:
-        rospy.init_node('dgorl', anonymous=True)
+        rospy.init_node('graph_node', anonymous=True)
         # interfacename = rospy.get_param('~INTERFACE_NAME', 'wlan0')
         # update_rate = rospy.get_param('~update_rate_wireless_quality', 10)	
         pub_position = rospy.Publisher('position', PoseStamped, queue_size=10)
