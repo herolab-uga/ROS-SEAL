@@ -80,7 +80,7 @@ Each robot should have a Gaussian estimation map generated from the [GPMix](http
 For the multi-robot case, there is a node that convert all the GP maps into one occupancy map. You can use [this](http://wiki.ros.org/multirobot_map_merge) package.
 
 ## 4. Launch
-Run the SEAL package after installation on a robot and source bash and /devel/setuup.sh file:
+Run the SEAL package after installation on a robot and source bash and ~/catkin_explore/devel/setup.sh file:
 ```
 $ mkdir -p catkin_explore/src
 $ cd catkin_explore/src
