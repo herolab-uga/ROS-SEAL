@@ -18,7 +18,16 @@ The package has been tested on both ROS Noetic and ROS Melodic for turtlebot3. T
 
 2- Created a workspace.
 
+<<<<<<< HEAD
 3- Installed the "gmapping" ROS package: on PC and each robot, as:
+=======
+## Installation Requirements
+* C++ requirements.   
+([pybind11](https://github.com/pybind/pybind11) is also required, but it's built in this repository, you don't need to install)
+* python 3.6+
+* [Turtlebot Simulation Installation](http://wiki.ros.org/turtlebot/Tutorials/indigo/Turtlebot%20Installation#Installation_Types) is required to launch turtlebots for Gazebo simulation
+* [g2o installed](https://github.com/uoip/g2opy.git)
+>>>>>>> 5ded60b4ed12bc72dbfa2829ec3ccb24e7691c49
 
 ```sh
 $ sudo apt-get install ros-noetic-gmapping
@@ -68,6 +77,7 @@ Each robot should have a local map generated from the [gmapping](http://wiki.ros
 ### 3.6. A map merging node
 For the multi-robot case, there should be a node that merges all the local maps into one global map. You can use [this](http://wiki.ros.org/multirobot_map_merge) package.
 
+<<<<<<< HEAD
 ## 4. Nodes
 There are 4 types of nodes; nodes for detecting frontier points in an occupancy grid map, a node for filtering the detected points, a node for assigning the points to the robots, and a node for planning path for robot. The following figure shows the structure:
 ![alt text](./cqlite_overveiw.png "overview of CQLite exploration")
@@ -97,6 +107,18 @@ All detectors will be publishing detected frontier points on the same topic (```
 - ```~robot_frame``` (string, default: "/tb3_0/base_link"): The frame attached to the robot. Every time the tree resets, it will start from the current robot location obtained from this frame.
 
  - ```~map_topic``` (string, default: "/tb3_0/map"): This parameter defines the topic name on which the node will recieve the map.
+=======
+## 4. Launch
+Run the SEAL package after installation on a robot and source bash and ~/catkin_explore/devel/setup.sh file:
+```
+$ mkdir -p catkin_explore/src
+$ cd catkin_explore/src
+$ git clone https://github.com/herolab-uga/ROS-SEAL.git
+$ cd ~/catkin_explore/
+$ catkin_make
+$ roslaunch seal seal_bookstore.launch
+```
+>>>>>>> 5ded60b4ed12bc72dbfa2829ec3ccb24e7691c49
 
 #### 4.2.2. Subscribed Topics
  - The map (Topic name is defined by the ```~map_topic``` parameter) ([nav_msgs/OccupancyGrid](http://docs.ros.org/api/nav_msgs/html/msg/OccupancyGrid.html)).
