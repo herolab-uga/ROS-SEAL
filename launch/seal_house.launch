@@ -94,10 +94,6 @@
       <arg name="model" value="$(arg model)" />
       <arg name="dimensions" value="$(arg dimensions)"/>
     </include>
-    <include file="$(find seal)/launch/includes/seal_gp_to_og.launch">
-      <arg name="model" value="$(arg model)" />
-      <arg name="dimensions" value="$(arg dimensions)"/>
-    </include>
   </group>
 
   <group ns = "/$(arg second_tb3)">
@@ -134,10 +130,6 @@
       <arg name="model" value="$(arg model)" />
       <arg name="dimensions" value="$(arg dimensions)"/>
     </include>
-    <include file="$(find seal)/launch/includes/seal_gp_to_og.launch">
-      <arg name="model" value="$(arg model)" />
-      <arg name="dimensions" value="$(arg dimensions)"/>
-    </include>
   </group>
 
   <group ns = "/$(arg third_tb3)">
@@ -171,10 +163,6 @@
     </include>
      <!-- include convex_hull for the first turtle bot -->
      <include file="$(find seal)/launch/includes/seal_convex_hull.launch">
-      <arg name="model" value="$(arg model)" />
-      <arg name="dimensions" value="$(arg dimensions)"/>
-    </include>
-    <include file="$(find seal)/launch/includes/seal_gp_to_og.launch">
       <arg name="model" value="$(arg model)" />
       <arg name="dimensions" value="$(arg dimensions)"/>
     </include>
