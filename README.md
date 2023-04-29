@@ -18,6 +18,7 @@ Overall functionality of SEAL with respect to single robot and information shari
 * C++ requirements.   
 ([pybind11](https://github.com/pybind/pybind11) is also required, but it's built in this repository, you don't need to install)
 * python 3.6+
+* [Turtlebot Simulation Installation](http://wiki.ros.org/turtlebot/Tutorials/indigo/Turtlebot%20Installation#Installation_Types) is required to launch turtlebots for Gazebo simulation
 * [g2o installed](https://github.com/uoip/g2opy.git)
 
 ### g2o Installation
