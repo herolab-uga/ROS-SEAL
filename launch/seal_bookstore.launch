@@ -48,11 +48,7 @@
     </node>
     <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-urdf -model $(arg first_tb3) -x $(arg first_tb3_x_pos) -y $(arg first_tb3_y_pos) -z $(arg first_tb3_z_pos) -Y $(arg first_tb3_yaw) -param robot_description" />
     <!-- include gp for the first turtle bot -->
-    <include file="$(find seal)/launch/include/seal_gp.launch">
-      <arg name="set_base_frame" value="$(arg first_tb3)/base_footprint"/>
-      <arg name="set_odom_frame" value="$(arg first_tb3)/odom"/>
-      <arg name="set_map_frame" value="$(arg first_tb3)/map"/>
-      <arg name="configuration_basename" value="$(arg configuration_basename)"/>
+    <include file="$(find seal)/launch/includes/seal_gp.launch">
     </include>
     <!-- include move base for the first turtle bot -->
     <include file="$(find seal)/launch/includes/move_base.launch">
@@ -63,16 +59,15 @@
     </include>
     <!-- include graph for the first turtle bot -->
     <include file="$(find seal)/launch/includes/seal_graph.launch">
-      <arg name="scan_topic" value="$(arg first_tb3)/scan"/>
-      <arg name="global_frame_id" value="$(arg first_tb3)/map"/>
-      <arg name="base_frame_id" value="$(arg first_tb3)/base_footprint"/>
-      <arg name="odom_frame_id" value="$(arg first_tb3)/odom"/>
     </include>
      <!-- include convex_hull for the first turtle bot -->
      <include file="$(find seal)/launch/includes/seal_convex_hull.launch">
-      <arg name="model" value="$(arg model)" />
-      <arg name="dimensions" value="$(arg dimensions)"/>
     </include>
+<<<<<<< HEAD
+=======
+    <include file="$(find seal)/launch/includes/seal_gp_to_og.launch">
+    </include>
+>>>>>>> 61b26445c73e62f9105370972fb1a52bc11c369e
 
   </group>
 
@@ -86,10 +81,6 @@
     <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-urdf -model $(arg second_tb3) -x $(arg second_tb3_x_pos) -y $(arg second_tb3_y_pos) -z $(arg second_tb3_z_pos) -Y $(arg second_tb3_yaw) -param robot_description" />
     <!-- include gp for the second turtle bot -->
     <include file="$(find seal)/launch/includes/seal_gp.launch">
-      <arg name="set_base_frame" value="$(arg second_tb3)/base_footprint"/>
-      <arg name="set_odom_frame" value="$(arg second_tb3)/odom"/>
-      <arg name="set_map_frame" value="$(arg second_tb3)/map"/>
-      <arg name="configuration_basename" value="$(arg configuration_basename)"/>
     </include>
     <!-- include move base for the second turtle bot -->
     <include file="$(find seal)/launch/includes/move_base.launch">
@@ -100,16 +91,15 @@
     </include>
     <!-- include graph for the second turtle bot -->
     <include file="$(find seal)/launch/includes/seal_graph.launch">
-      <arg name="scan_topic" value="$(arg second_tb3)/scan"/>
-      <arg name="global_frame_id" value="$(arg second_tb3)/map"/>
-      <arg name="base_frame_id" value="$(arg second_tb3)/base_footprint"/>
-      <arg name="odom_frame_id" value="$(arg second_tb3)/odom"/>
     </include>
     <!-- include convex_hull for the first turtle bot -->
      <include file="$(find seal)/launch/includes/seal_convex_hull.launch">
-      <arg name="model" value="$(arg model)" />
-      <arg name="dimensions" value="$(arg dimensions)"/>
     </include>
+<<<<<<< HEAD
+=======
+    <include file="$(find seal)/launch/includes/seal_gp_to_og.launch">
+    </include>
+>>>>>>> 61b26445c73e62f9105370972fb1a52bc11c369e
 
   </group>
 
@@ -123,10 +113,6 @@
     <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-urdf -model $(arg third_tb3) -x $(arg third_tb3_x_pos) -y $(arg third_tb3_y_pos) -z $(arg third_tb3_z_pos) -Y $(arg third_tb3_yaw) -param robot_description" />
     <!-- include gp for the third turtle bot -->
     <include file="$(find seal)/launch/includes/seal_gp.launch">
-      <arg name="set_base_frame" value="$(arg third_tb3)/base_footprint"/>
-      <arg name="set_odom_frame" value="$(arg third_tb3)/odom"/>
-      <arg name="set_map_frame" value="$(arg third_tb3)/map"/>
-      <arg name="configuration_basename" value="$(arg configuration_basename)"/>
     </include>
     <!-- include move base for the third turtle bot -->
     <include file="$(find seal)/launch/includes/move_base.launch">
@@ -137,16 +123,15 @@
     </include>
     <!-- include graph for the third turtle bot -->
     <include file="$(find seal)/launch/includes/seal_graph.launch">
-      <arg name="scan_topic" value="$(arg third_tb3)/scan"/>
-      <arg name="global_frame_id" value="$(arg third_tb3)/map"/>
-      <arg name="base_frame_id" value="$(arg third_tb3)/base_footprint"/>
-      <arg name="odom_frame_id" value="$(arg third_tb3)/odom"/>
     </include>
     <!-- include convex_hull for the first turtle bot -->
      <include file="$(find seal)/launch/includes/seal_convex_hull.launch">
-      <arg name="model" value="$(arg model)" />
-      <arg name="dimensions" value="$(arg dimensions)"/>
     </include>
+<<<<<<< HEAD
+=======
+    <include file="$(find seal)/launch/includes/seal_gp_to_og.launch">
+    </include>
+>>>>>>> 61b26445c73e62f9105370972fb1a52bc11c369e
   </group>
 
 
