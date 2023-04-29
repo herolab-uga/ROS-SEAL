@@ -82,9 +82,11 @@ For the multi-robot case, there is a node that convert all the GP maps into one 
 ## 4. Launch
 Run the SEAL package after installation on a robot and source bash and /devel/setuup.sh file:
 ```
+$ mkdir -p catkin_explore/src
+$ cd catkin_explore/src
 $ git clone https://github.com/herolab-uga/ROS-SEAL.git
 $ cd ~/catkin_explore/
-$ catkin_make``
+$ catkin_make
 $ roslaunch seal seal_bookstore.launch
 ```
 
