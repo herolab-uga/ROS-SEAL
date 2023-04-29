@@ -84,11 +84,8 @@
      <!-- include convex_hull for the first turtle bot -->
      <include file="$(find seal)/launch/includes/seal_convex_hull.launch">
     </include>
-<<<<<<< HEAD
-=======
     <include file="$(find seal)/launch/includes/seal_gp_to_og.launch">
     </include>
->>>>>>> 61b26445c73e62f9105370972fb1a52bc11c369e
   </group>
 
   <group ns = "/$(arg second_tb3)">
@@ -115,11 +112,8 @@
      <!-- include convex_hull for the first turtle bot -->
      <include file="$(find seal)/launch/includes/seal_convex_hull.launch">
     </include>
-<<<<<<< HEAD
-=======
     <include file="$(find seal)/launch/includes/seal_gp_to_og.launch">
     </include>
->>>>>>> 61b26445c73e62f9105370972fb1a52bc11c369e
   </group>
 
   <group ns = "/$(arg third_tb3)">
@@ -146,11 +140,8 @@
      <!-- include convex_hull for the first turtle bot -->
      <include file="$(find seal)/launch/includes/seal_convex_hull.launch">
     </include>
-<<<<<<< HEAD
-=======
     <include file="$(find seal)/launch/includes/seal_gp_to_og.launch">
     </include>
->>>>>>> 61b26445c73e62f9105370972fb1a52bc11c369e
   </group>
 
 
