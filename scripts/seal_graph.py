@@ -24,8 +24,8 @@ from nav_msgs.msg import Odometry
 import rospy
 from std_msgs.msg import String
 from geometry_msgs.msg import PoseStamped
-from robot_msgs.msg import Robot_Pos, StringList
-from robot_msgs.srv import GetCharger, GetChargerResponse, ReleaseCharger, ReleaseChargerResponse 
+#from robot_msgs.msg import Robot_Pos, StringList
+#from robot_msgs.srv import GetCharger, GetChargerResponse, ReleaseCharger, ReleaseChargerResponse 
 
 areaSize=(10, 10)
 No_Of_Robots = 3
