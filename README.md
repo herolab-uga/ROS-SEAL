@@ -1,5 +1,5 @@
 # SEAL
-It is a ROS package that implements a SEAL: Simultaneous exploration and localization for multi-robot systems. It uses Gaussian process model for environment scanning and occupancy girds as a map representation. This package has 3 different ROS nodes:
+It is a ROS package that implements a SEAL: Simultaneous exploration and localization for multi-robot systems. It uses the Gaussian process model for environment scanning and occupancy girds as a map representation. This package has three different ROS nodes:
 
   - SEAL graph node.
   - SEAL Gaussian process node.
@@ -7,8 +7,9 @@ It is a ROS package that implements a SEAL: Simultaneous exploration and localiz
 
 # Publication
 If you use this work, please cite our paper:
-E. Latif and R. Parasuraman, "SEAL: Simultaneous Exploration and Localization for Multi-Robot Systems," 2023 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2023.
+E. Latif and R. Parasuraman, "SEAL: Simultaneous Exploration and Localization for Multi-Robot Systems," 2023 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Detroit, MI, USA, 2023, pp. 5358-5365, doi: 10.1109/IROS55552.2023.10342157.
 
+IEEE Published version: [https://ieeexplore.ieee.org/document/10342157](https://ieeexplore.ieee.org/document/10342157)
 Preprint available at [https://arxiv.org/abs/2306.12623](https://arxiv.org/abs/2306.12623)
 
 # Experiment Demonstration
@@ -18,19 +19,19 @@ Preprint available at [https://arxiv.org/abs/2306.12623](https://arxiv.org/abs/2
 
 
 ## Overview
-By creating map using gp, robots first perform relative position-weighted connectivity graphs using RSSI as local sensor data, expanding these graphs based on potential positions at a particular location, and then further optimizing to obtain relative position estimates for all connected robots, DGORL seeks to efficiently achieve high localization accuracy. Furthermore, robots also provide fused Gaussian process map which then convert into global map. SEAL applied convex hull optimization for boundary detection and navigate robots to the unexplored boundaries. An overview of the SEAL can be found in Figure below:
+By creating a map using GP, robots first perform relative position-weighted connectivity graphs using RSSI as local sensor data, expanding these graphs based on potential positions at a particular location and then further optimizing to obtain relative position estimates for all connected robots; SEAL seeks to efficiently achieve high localization accuracy. Furthermore, robots also provide fused Gaussian process maps, which are then converted into global maps. SEAL applied convex hull optimization for boundary detection and navigated robots to unexplored boundaries. An overview of the SEAL can be found in the Figure below:
 
 ![Overview](/images/seal_overview.png)
 ## Architecture
-Overall functionality of SEAL with respect to single robot and information sharing can be seen in the architecture figure below:
+The overall functionality of SEAL with respect to single robot and information sharing can be seen in the architecture figure below:
 
 ![Overview](/images/seal_architecture_v2.png)
 
 ## Installation Requirements
 * C++ requirements.   
-([pybind11](https://github.com/pybind/pybind11) is also required, but it's built in this repository, you don't need to install)
+([pybind11](https://github.com/pybind/pybind11) is also required, but it's built into this repository; you don't need to install)
 * python 3.6+
-* [Turtlebot Simulation Installation](http://wiki.ros.org/turtlebot/Tutorials/indigo/Turtlebot%20Installation#Installation_Types) is required to launch turtlebots for Gazebo simulation
+* [Turtlebot Simulation Installation](http://wiki.ros.org/turtlebot/Tutorials/indigo/Turtlebot%20Installation#Installation_Types) is required to launch turtlebot 3e for Gazebo simulation
 * [g2o installed](https://github.com/uoip/g2opy.git)
 
 ### g2o Installation
