@@ -106,7 +106,7 @@ $ roslaunch seal seal_bookstore.launch
 
 ## Core contributors
 
-* **Ehsan Latif** - PhD Candidate
+* **Ehsan Latif, Ph.D.** - Lab Alum
 
 * **Dr. Ramviyas Parasuraman** - Lab Director
 
