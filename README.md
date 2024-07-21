@@ -12,7 +12,7 @@ E. Latif and R. Parasuraman, "SEAL: Simultaneous Exploration and Localization fo
 IEEE Published version: [https://ieeexplore.ieee.org/document/10342157](https://ieeexplore.ieee.org/document/10342157)
 Preprint available at [https://arxiv.org/abs/2306.12623](https://arxiv.org/abs/2306.12623)
 
-# Experiment Demonstration
+# Experiment Demonstration Video
 
 [![Experiment Demo](https://img.youtube.com/vi/zVUjiPdgYIg/0.jpg)](https://www.youtube.com/watch?v=zVUjiPdgYIg)
 
@@ -120,5 +120,5 @@ For further information, contact Ehsan Latif ehsan.latif@uga.edu or Dr. Ramviyas
 https://hero.uga.edu/
 
 <p align="center">
-<img src="http://hero.uga.edu/wp-content/uploads/2021/04/herolab_newlogo_whitebg.png" width="300">
+<img src="https://herolab.org/wp-content/uploads/2021/04/herolab_newlogo_whitebg.png" width="300">
 </p>
